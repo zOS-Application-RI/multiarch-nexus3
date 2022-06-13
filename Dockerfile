@@ -51,7 +51,7 @@ ENV NEXUS_HOME=${SONATYPE_DIR}/nexus \
 ARG NEXUS_REPOSITORY_MANAGER_COOKBOOK_VERSION="release-0.5.20220111-153152.2b86c3a"
 ARG NEXUS_REPOSITORY_MANAGER_COOKBOOK_URL="https://github.com/sonatype/chef-nexus-repository-manager/releases/download/${NEXUS_REPOSITORY_MANAGER_COOKBOOK_VERSION}/chef-nexus-repository-manager.tar.gz"
 
-ADD solo.json.erb /var/chef/solo.json.erb
+COPY solo.json.erb /var/chef/
 
 # Install using chef-solo
 # Chef version locked to avoid needing to accept the EULA on behalf of whomever builds the image
