@@ -70,6 +70,7 @@ RUN yum install -y --disableplugin=subscription-manager hostname procps \
     
 VOLUME ${NEXUS_DATA}
 EXPOSE 8081
+
 USER nexus
 
 ENV INSTALL4J_ADD_VM_PARAMS="-Xms2703m -Xmx2703m -XX:MaxDirectMemorySize=2703m -Djava.util.prefs.userRoot=${NEXUS_DATA}/javaprefs"
