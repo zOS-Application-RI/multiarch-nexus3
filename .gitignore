@@ -23,3 +23,5 @@ target/
 atlassian-ide-plugin.xml
 dependency-reduced-pom.xml
 out
+# VSCODE
+.vscode
