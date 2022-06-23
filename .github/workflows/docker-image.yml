@@ -1,4 +1,4 @@
-name: DBB Web Server CI/CD to Docker Hub
+name: Nexus3 to Docker Hub
 
 on:
   push:
