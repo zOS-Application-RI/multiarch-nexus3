@@ -2,7 +2,7 @@ version: "2"
 
 services:
   nexus:
-    image: sonatype/nexus3
+    image: ashish1981/nexus3:amd64
     volumes:
       - "nexus-data:/nexus-data"
     ports:
